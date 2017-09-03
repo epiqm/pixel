@@ -1,0 +1,109 @@
+/*
+ * pixel editor css
+ * written by @epiqmax
+*/
+
+@font-face {
+  font-family: 'Baloo Bhaijaan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baloo Bhaijaan Regular'), local('BalooBhaijaan-Regular'), url(/static/fonts/WADJjVg5Kkv7JQ_7Ty9eDiVGM49dTLdoHkICOIx31E8.woff2) format('woff2');
+  unicode-range: U+0100-024F, U+1E00-1EFF, U+20A0-20AB, U+20AD-20CF, U+2C60-2C7F, U+A720-A7FF;
+}
+@font-face {
+  font-family: 'Baloo Bhaijaan';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Baloo Bhaijaan Regular'), local('BalooBhaijaan-Regular'), url(/static/fonts/WADJjVg5Kkv7JQ_7Ty9eDuf8eIYWeN9wdgQsH6TCIxw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215;
+}
+
+a, a:link, a:visited {
+	color: #E73EA9;
+}
+a:hover, a:active {
+	color: #EA4C89;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-size: 700% 900%;
+	background-repeat:no-repeat;
+	min-height:100%;
+	background-color: rgb(37,179,178);
+	color: rgba(50,50,50);
+	font-size: 16px;
+	cursor: default;
+}
+#pixbox {
+	border: 1px solid rgba(50,50,50,.2);
+	margin: 0 auto 5px auto;
+	text-align: center;
+	width: 301px;
+	height: 241px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 2px;
+	box-shadow: 2px 1px rgba(0,0,0,.3);
+	cursor: pointer;
+}
+#palbox {
+	border: 1px solid rgba(50,50,50,.2);
+	margin: 0 auto 15px auto;
+	text-align: center;
+	width: 300px;
+	height: 21px;
+	overflow: hidden;
+	box-sizing: border-box;
+	border-radius: 2px;		background-color: #FBAB7E;
+	background-image: linear-gradient(62deg, rgba(0,0,0,.3) 0%, rgba(0,0,0,.3) 100%);
+	box-shadow: 2px 1px rgba(0,0,0,.3);
+	cursor: pointer;
+}
+#pallete {
+	overflow: hidden;
+	clear: none;
+	width: 100px;
+}
+#pix {
+	overflow: hidden;
+	width: 320px;
+}
+.pixl {
+	width: 10px;
+	height: 10px;
+	background: rgb(255,250,234);
+	display: block;
+	float: left;
+	margin: 0px;
+	border: 1px solid rgba(50,50,50,.08);
+	box-sizing: border-box;
+}
+.pixl:hover {
+	background: blue;
+}
+.pixldrop {
+	clear: both;
+	overflow: none;
+	display: block;
+}
+.wrap {
+	width: 100%;
+	margin: 20px 30px;
+	margin: 0 auto;
+	text-align: center;
+}
+h1 {
+	font-size: 46px;
+	text-shadow: 3px 3px rgba(0,0,0, .67);
+	color: rgb(252,214,5);
+	margin-bottom: 10px;
+}
+h1, .cpy {
+	font-family: 'Baloo Bhaijaan', cursive;
+}
+.cpy {
+	margin-bottom: 15px;
+	font-size: 14px;
+}
